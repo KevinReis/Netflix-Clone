@@ -1,0 +1,119 @@
+:root{        /* Define uma cor principal em qualquer lugar que você adicionar essa específica */
+    --vermelho: #E50914;  
+    --preto: #141414;
+
+}
+
+*{    /* Reseta as configurações padrões do navegador */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preto);
+    font-family:'Arial', Times, serif; /* Define a fonte do seu body */
+    color:white;
+
+}
+
+header .container {
+    display: flex;    /* Especifica o tipo de caixa de renderização*/
+    flex-direction: row;
+    align-items: center;  /* Alinha os itens */
+    justify-content: space-between;  /* Espaço entre os conteúdos */
+    
+}
+
+header .logo{
+    color:var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px; /* Tamanho da fonte */
+}
+header nav a {
+    text-decoration: none;  
+    color: #AAA;
+    margin-right: 10px;  /* Define a posição do nav na margem*/
+
+}
+
+
+header nav a:hover{
+    color: #fff;
+
+}
+
+.filme-principal {
+
+    font-size: 16px;
+    background-image:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(img/capa-house.jpg);
+    height: 400px; /* Altura */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;     /* Alinhamento dos itens no navegador */
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px; 
+}
+
+
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;  /* Passar o cursor por cima para indicar um botão */
+    transition: .3s ease all; /* tempo de delay na mudança de cor do botão */
+
+}
+
+.botao:hover{
+    background-color: white;
+    color: black
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+
+.container{
+    margin-left: 20px;
+
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+.botao a {
+
+    color: white;
+    text-decoration: none;
+
+}
